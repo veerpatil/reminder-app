@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reminder</title>
+    <link rel="stylesheet" href="overlay.css" />
+  </head>
+  <body>
+    <div id="stage" class="stage hidden" aria-live="polite">
+      <div class="mascot-wrap">
+        <div class="speech-bubble" id="bubble">
+          <p id="message-text"></p>
+        </div>
+        <div class="mascot" aria-hidden="true">
+          <img
+            src="../assets/mascot.png"
+            alt=""
+            class="mascot-img"
+            width="380"
+            height="auto"
+          />
+        </div>
+      </div>
+      <button type="button" class="dismiss" id="dismiss">Got it!</button>
+    </div>
+    <script src="overlay.js"></script>
+  </body>
+</html>

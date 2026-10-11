@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bolt — Your hero reminder</title>
+    <meta
+      name="description"
+      content="Set a time, your hero does the rest. Free reminder app for macOS and Windows."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <p class="badge">100% Free · v1.0</p>
+      <h1>Your hero flies in on time</h1>
+      <p class="sub">Built for macOS &amp; Windows</p>
+
+      <section class="hero-card">
+        <img
+          class="mascot"
+          src="../assets/mascot.png"
+          alt="Bolt reminder hero"
+          width="280"
+        />
+        <h2>Bolt Reminder</h2>
+        <p>Set a time, your hero does the rest.</p>
+        <form class="demo-form" onsubmit="return false;">
+          <label>
+            Message
+            <input type="text" value="Time to drink water! 💧" readonly />
+          </label>
+          <div class="time-row">
+            <span>At time</span>
+            <span class="pill">08:00</span>
+            <span>Repeat</span>
+            <span class="pill">Daily</span>
+          </div>
+        </form>
+      </section>
+
+      <section class="steps">
+        <article>
+          <h3>Install app</h3>
+          <p>Download the desktop app and open it from your menu bar or system tray.</p>
+        </article>
+        <article>
+          <h3>Set reminder</h3>
+          <p>Type your message and pick the exact time you want to be reminded.</p>
+        </article>
+        <article>
+          <h3>Stay on track</h3>
+          <p>Your caped hero swoops onto the screen right when you need him.</p>
+        </article>
+      </section>
+
+      <p class="cta-note">
+        Clone this repo, run <code>npm install && npm start</code>, or build with
+        <code>npm run dist</code>.
+      </p>
+    </main>
+  </body>
+</html>

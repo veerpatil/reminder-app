@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bolt Reminder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="mascot-mini" aria-hidden="true">
+          <img src="../assets/mascot.png" alt="" width="44" height="44" class="mascot-avatar" />
+        </div>
+        <div>
+          <h1>Bolt</h1>
+          <p class="tagline">Your hero flies in when it’s reminder time</p>
+        </div>
+      </header>
+
+      <form id="reminder-form" class="card">
+        <label class="field">
+          <span>Message</span>
+          <input
+            type="text"
+            id="message"
+            name="message"
+            placeholder="Time to drink water! 💧"
+            maxlength="200"
+            required
+          />
+        </label>
+
+        <div class="row">
+          <label class="field">
+            <span>Hour</span>
+            <select id="hours" name="hours"></select>
+          </label>
+          <label class="field">
+            <span>Minute</span>
+            <select id="minutes" name="minutes"></select>
+          </label>
+        </div>
+
+        <label class="field">
+          <span>Repeat</span>
+          <select id="repeat" name="repeat">
+            <option value="none">Once</option>
+            <option value="daily">Daily</option>
+          </select>
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Add reminder</button>
+          <button type="button" class="btn-secondary" id="test-now">
+            Test now
+          </button>
+        </div>
+        <p id="form-error" class="error" hidden></p>
+      </form>
+
+      <section class="card list-section">
+        <h2>Your reminders</h2>
+        <div class="list-scroll">
+          <ul id="reminder-list" class="reminder-list"></ul>
+          <p id="empty-state" class="empty">No reminders yet — Bolt is on standby.</p>
+        </div>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
